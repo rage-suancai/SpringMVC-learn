@@ -9,7 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f285512a-cfb5-4625-b745-6a6fe3b20c08" name="Changes" comment="" />
+    <list default="true" id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/Initializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/Document/Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/Document/SpringMVC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/java/com/SpringMVC/controller/TraditionBuildController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/resources/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -26,7 +50,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SpringMVC-Study/Document/SpringMVC.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Document/Controller.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -48,41 +72,60 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2VQr27hXqYRR4dqoGJF2tUNq802" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2VTMa5i7ZNskto6soeKxQUyXhCd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/back-end learning/java-exercise/JavaEE/javaSSM-yxs/javaSSM-SpringMVC",
+    "last_opened_file_path": "D:/back-end learning/java-exercise/JavaEE/javaSSM-yxs/javaSSM-SpringMVC/src/main/java/com/SpringMvcController",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "e3f0dff12277054f6a64aaacad9c5f99",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcController" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\SpringMVC-Study\src\main\webapp" />
-      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\SpringMVC-Study\src\main\resources\WEB-INF" />
+      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="javaSSM-SpringMVC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="javaSSM-SpringMVC" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.5" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -94,7 +137,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="10c31e93-c3f6-4836-b365-db27dbd3cb72" />
+        <option name="BASE_DIRECTORY_NAME" value="f2376283-6ada-4206-add8-12c438f495e9" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -102,7 +145,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51489" />
+        <option name="DEBUG_PORT" value="57149" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -175,15 +218,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f285512a-cfb5-4625-b745-6a6fe3b20c08" name="Changes" comment="" />
-      <created>1694778934720</created>
+      <changelist id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="" />
+      <created>1694855678760</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694778934720</updated>
-      <workItem from="1694778935767" duration="8015000" />
-      <workItem from="1694826878828" duration="928000" />
-      <workItem from="1694827817872" duration="92000" />
-      <workItem from="1694827917872" duration="3216000" />
+      <updated>1694855678760</updated>
+      <workItem from="1694855681253" duration="220000" />
+      <workItem from="1694855922605" duration="6561000" />
     </task>
     <servers />
   </component>
