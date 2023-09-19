@@ -254,6 +254,149 @@
                     }
 ```
 
+其中最关键的是path属性(等价于value) 它决定了当前方法处理的请求路径 注意路径必须全局唯一 任何路径只能有一个方法进行处理
+它是一个数组 也就是说此方法不仅仅可以只用于处理某一个请求路径 我们可以使用此方法处理多个请求路径:
+
+```java
+                    @RequestMapping({"/index", "/test"})
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+现在我们访问/index或是/test都会经过此方法进行处理
+
+我们也可以直接将@RequestMapping添加到类名上 表示为此类中的所有请求映射添加一个路径前缀 比如:
+
+```java
+                    @Controller
+                    @RequestMapping("/yyds")
+                    public class MainController {
+                    
+                        @RequestMapping({"/index", "/test"})
+                        public ModelAndView index(){
+                            return new ModelAndView("index");
+                        }
+                        
+                    }
+```
+
+那么现在我们需要访问/yyds/index或是/yyds/test才可以得到此页面 我们可以直接在IDEA下方的端点模块中查看当前Web应用程序定义的所有请求映射 并且可以通过IDEA为我们提供的内置Web客户端直接访问某个路径
+
+路径还支持使用通配符进行匹配:
+- `?`: 表示任意一个字符 比如@RequestMapping("/index/x?")可以匹配/index/xa, /index/xb等等
+- `*`: 表示任意0-n个字符 比如@RequestMapping("/index/*")可以匹配/index/lbwnb, /index/yyds等
+- `**`: 表示当前目录或基于当前目录的多级目录 比如@RequestMapping("/index/**")可以匹配/index, /index/xxx等
+
+我们接着来看一下method属性 顾名思义 它就是请求的方法类型 我们可以限定请求方式 比如:
+
+```java
+                    @RequestMapping(value = "/index", method = RequestMethod.POST)
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+现在我们如果直接使用浏览器访问此页面 会显示405方法不支持 因为浏览器默认是直接使用GET方法获取页面
+而我们这里指定为POST方法访问地址 所以访问失败 我们现在再去端点中用POST方式去访问 成功得到页面
+
+<img src="https://image.itbaima.net/markdown/2023/02/20/JVwN2MhrWBAGni9.png"/>
+
+我们也可以使用衍生注解设定为指定类型的请求映射:
+
+```java
+                    @PostMapping(value = "/index")
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+这里使用了@PostMapping直接指定为POST请求类型的请求映射 同样的 还有@GetMapping可以直接指定为GET请求方式 这里就不一一例举了
+
+我们可以使用params属性来指定请求必须携带哪些请求参数 比如:
+
+```java
+                    @RequestMapping(value = "/index", params = {"username", "password"})
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+比如这里我们要求请求中必须携带username和password属性 否则无法访问 它还支持表达式 比如我们可以这样编写:
+
+```java
+                    @RequestMapping(value = "/index", params = {"!username", "password"})
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+在username之前添加一个感叹号表示请求的不允许携带此参数 否则无法访问 我们甚至可以直接设定一个固定值:
+
+```java
+                    @RequestMapping(value = "/index", params = {"username!=test", "password=123"})
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+这样 请求参数username不允许为test 并且password必须为123 否则无法访问
+
+header属性使用与params一致 但是它要求的是请求中需要携带什么内容 比如:
+
+```java
+                    @RequestMapping(value = "/index", headers = "!Connection")
+                    public ModelAndView index(){
+                        return new ModelAndView("index");
+                    }
+```
+
+那么 如果请求中携带了Connection属性 将无法访问 其它两个属性:
+- consumes: 指定处理请求的提交内容类型(Content-Type) 例如application/json, text/html
+- produces: 指定返回的内容类型 仅当request请求头中的(Accept)类型中包含该指定类型才返回
+
+### @RequestParam和@RequestHeader详解
+我们接着来看 如何获取到请求中的参数
+
+我们只需要为方法添加一个形式参数 并在形式参数前面添加@RequestParam注解即可:
+
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(@RequestParam("username") String username){
+    
+                        System.out.println("接受到请求参数: " + username);
+                        return new ModelAndView("index");
+                        
+                    }
+```
+
+我们需要在@RequestParam中填写参数名称 参数的值会自动传递给形式参数 我们可以直接在方法中使用 注意 如果参数名称与形式参数名称相同 即使不添加@RequestParam也能获取到参数值
+
+一旦添加@RequestParam 那么此请求必须携带指定参数 我们也可以将require属性设定为false来将属性设定为非必须:
+
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(@RequestParam(value = "username", required = false) String username){
+    
+                        System.out.println("接受到请求参数: " + username);
+                        return new ModelAndView("index");
+                        
+                    }
+```
+
+我们还可以直接设定一个默认值 当请求参数缺失时 可以直接使用默认值:
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

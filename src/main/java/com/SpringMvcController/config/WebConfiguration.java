@@ -12,7 +12,7 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
-@ComponentScan("com.SpringMvcBuild.controller")
+@ComponentScan("com.SpringMvcController.controller")
 @EnableWebMvc
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
@@ -51,7 +51,7 @@ public class WebConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
+        registry.addResourceHandler("/src/main/webapp/static/**").addResourceLocations("/src/main/webapp/static/");
     }
 
 }

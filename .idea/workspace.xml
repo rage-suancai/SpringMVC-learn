@@ -9,40 +9,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="SpringMVC的学习与练习(@RequestMapping详解)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/MainController1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/MainController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/MainController3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/Document/Controller.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/Document/SpringMVC.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/java/com/SpringMVC/controller/TraditionBuildController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/resources/application.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC-Study/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Document/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/Document/Controller.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/config/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/config/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/controller/AnnotationBuildController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/controller/AnnotationBuildController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/controller/TraditionBuildController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcBuild/controller/TraditionBuildController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +64,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\code-software\maven-framework\maven-jarbaoku" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../../../../code-software/maven-framework/apache-maven-3.9.4" />
-        <option name="userSettingsFile" value="D:\code-software\maven-framework\apache-maven-3.9.4\apache-maven-3.9.4\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\code-software\maven-framework\apache-maven-3.9.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -91,7 +88,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/back-end learning/java-exercise/JavaEE/javaSSM-yxs/javaSSM-SpringMVC/src/main/java/com/SpringMvcController",
+    "last_opened_file_path": "D:/back-end learning/java-exercise/JavaEE/javaSSM-yxs/javaSSM-SpringMVC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,7 +97,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "e3f0dff12277054f6a64aaacad9c5f99",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -110,9 +108,20 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\webapp" />
+      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.5">
+    <configuration name="All in javaSSM_SpringMVC-endpoints" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/javaSSM_SpringMVC-endpoints.http">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="javaSSM-SpringMVC" />
       <method v="2">
@@ -214,6 +223,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in javaSSM_SpringMVC-endpoints" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -224,8 +238,27 @@
       <option name="presentableId" value="Default" />
       <updated>1694855678760</updated>
       <workItem from="1694855681253" duration="220000" />
-      <workItem from="1694855922605" duration="6561000" />
+      <workItem from="1694855922605" duration="6680000" />
+      <workItem from="1695125245403" duration="4492000" />
+      <workItem from="1695129974088" duration="5622000" />
     </task>
+    <task id="LOCAL-00001" summary="SpringMVC的学习与练习(@RequestMapping详解)">
+      <option name="closed" value="true" />
+      <created>1694865034722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694865034722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SpringMVC的学习与练习(@RequestMapping详解)">
+      <option name="closed" value="true" />
+      <created>1694865052494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694865052494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,5 +274,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SpringMVC的学习与练习(@RequestMapping详解)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC的学习与练习(@RequestMapping详解)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

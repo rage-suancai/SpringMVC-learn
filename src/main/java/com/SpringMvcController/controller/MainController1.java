@@ -1,19 +1,12 @@
-/**package com.SpringMvcBuild.controller;
+package com.SpringMvcController.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class AnnotationBuildController {
-
-    @ResponseBody
-    @RequestMapping("/annotation")
-    public String hello() {
-        return "Hello SpringMVC🤩";
-    }
+public class MainController1 {
 
     @RequestMapping("/index1")
     public ModelAndView index1() {
@@ -36,4 +29,4 @@ public class AnnotationBuildController {
         model.addAttribute("name", "啊这"); return "index";
     }
 
-}**/
+}

@@ -1,8 +1,7 @@
-package com.SpringMvcBuild.config;
+/**package com.SpringMvcBuild.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-/**
 public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override

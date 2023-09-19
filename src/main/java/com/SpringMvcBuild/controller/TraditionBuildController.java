@@ -1,6 +1,6 @@
-package com.SpringMvcBuild.controller;
+/**package com.SpringMvcBuild.controller;
 
-/*@Controller
+@Controller
 @RequestMapping("/")
 public class TraditionBuildController {
 
@@ -9,4 +9,4 @@ public class TraditionBuildController {
         return "Hello SpringMVC🤣";
     }
 
-}*/
+}**/
