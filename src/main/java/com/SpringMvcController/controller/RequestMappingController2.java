@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/yy-ds1")
-public class MainController2 {
+public class RequestMappingController2 {
 
     /*@RequestMapping({"/hello1", "hello2"})
     public String hello(Model model) {

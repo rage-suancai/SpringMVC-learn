@@ -41,29 +41,35 @@
     
                         // 我们需要使用ThymeleafViewResolver作为视图解析器 并解析我们的HTML页面
                         @Bean
-                        public ThymeleafViewResolver thymeleafViewResolver(SpringTemplateEngine springTemplateEngine){
+                        public ThymeleafViewResolver thymeleafViewResolver(SpringTemplateEngine springTemplateEngine) {
+                            
                             ThymeleafViewResolver resolver = new ThymeleafViewResolver();
                             resolver.setOrder(1); // 可以存在多个视图解析器 并且可以为他们设定解析顺序
                             resolver.setCharacterEncoding("UTF-8"); // 编码格式是重中之重
                             resolver.setTemplateEngine(springTemplateEngine); // 和之前JavaWeb阶段一样 需要使用模板引擎进行解析 所以这里也需要设定一下模板引擎
                             return resolver;
+                            
                         }
                     
                         // 配置模板解析器
                         @Bean
-                        public SpringResourceTemplateResolver templateResolver(){
+                        public SpringResourceTemplateResolver templateResolver() {
+                            
                             SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
                             resolver.setSuffix(".html"); // 需要解析的后缀名称
                             resolver.setPrefix("/"); // 需要解析的HTML页面文件存放的位置 默认是webapp目录下 如果是类路径下需要添加classpath:前缀
                             return resolver;
+                            
                         }
                     
                         // 配置模板引擎Bean
                         @Bean
-                        public SpringTemplateEngine springTemplateEngine(ITemplateResolver resolver){
+                        public SpringTemplateEngine springTemplateEngine(ITemplateResolver resolver) {
+                            
                             SpringTemplateEngine engine = new SpringTemplateEngine();
                             engine.setTemplateResolver(resolver); // 模板解析器 默认即可
                             return engine;
+                            
                         }
                         
                     }
@@ -77,7 +83,7 @@
                     public class HelloController {
                     
                         @RequestMapping("/index") // 直接填写访问路径
-                        public ModelAndView index(){
+                        public ModelAndView index() {
                             return new ModelAndView("index"); // 返回ModelAndView对象 这里填入了视图的名称
                           	// 返回后会经过视图解析器进行处理
                         }
@@ -108,7 +114,7 @@
 
 ```java
                     @RequestMapping(value = "/index")
-                    public ModelAndView index(){
+                    public ModelAndView index() {
     
                         ModelAndView modelAndView = new ModelAndView("index");
                         modelAndView.getModel().put("name", "啊这"); // 将name传递给Model
@@ -138,7 +144,7 @@
 
 ```java
                     @RequestMapping(value = "/index")
-                    public String index(){
+                    public String index() {
                         return "index";
                     }
 ```
@@ -147,7 +153,7 @@
 
 ```java
                     @RequestMapping(value = "/index")
-                    public String index(Model model){ // 这里不仅仅可以是Model 还可以是Map,ModelMap
+                    public String index(Model model) { // 这里不仅仅可以是Model 还可以是Map,ModelMap
     
                         model.addAttribute("name", "yyds");
                         return "index";
@@ -176,7 +182,7 @@
 
 ```java
                     @RequestMapping(value = "/index")
-                    public String index(){
+                    public String index() {
                         return "index";
                     }
 ```
@@ -259,7 +265,7 @@
 
 ```java
                     @RequestMapping({"/index", "/test"})
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -274,7 +280,7 @@
                     public class MainController {
                     
                         @RequestMapping({"/index", "/test"})
-                        public ModelAndView index(){
+                        public ModelAndView index() {
                             return new ModelAndView("index");
                         }
                         
@@ -292,7 +298,7 @@
 
 ```java
                     @RequestMapping(value = "/index", method = RequestMethod.POST)
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -306,7 +312,7 @@
 
 ```java
                     @PostMapping(value = "/index")
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -317,7 +323,7 @@
 
 ```java
                     @RequestMapping(value = "/index", params = {"username", "password"})
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -326,7 +332,7 @@
 
 ```java
                     @RequestMapping(value = "/index", params = {"!username", "password"})
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -335,7 +341,7 @@
 
 ```java
                     @RequestMapping(value = "/index", params = {"username!=test", "password=123"})
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -346,7 +352,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 ```java
                     @RequestMapping(value = "/index", headers = "!Connection")
-                    public ModelAndView index(){
+                    public ModelAndView index() {
                         return new ModelAndView("index");
                     }
 ```
@@ -362,7 +368,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 ```java
                     @RequestMapping(value = "/index")
-                    public ModelAndView index(@RequestParam("username") String username){
+                    public ModelAndView index(@RequestParam("username") String username) {
     
                         System.out.println("接受到请求参数: " + username);
                         return new ModelAndView("index");
@@ -376,7 +382,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 ```java
                     @RequestMapping(value = "/index")
-                    public ModelAndView index(@RequestParam(value = "username", required = false) String username){
+                    public ModelAndView index(@RequestParam(value = "username", required = false) String username) {
     
                         System.out.println("接受到请求参数: " + username);
                         return new ModelAndView("index");
@@ -386,29 +392,175 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 我们还可以直接设定一个默认值 当请求参数缺失时 可以直接使用默认值:
 
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(@RequestParam(value = "username", required = false, defaultValue = "伞兵一号") String username) {
+    
+                        System.out.println("接受到请求参数: " + username);
+                        return new ModelAndView("index");
+                        
+                    }
+```
 
+如果需要使用Servlet原本的一些类 比如:
 
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(HttpServletRequest request) {
+                    
+                        System.out.println("接受到请求参数: " + request.getParameterMap().keySet());
+                        return new ModelAndView("index");
+                        
+                    }
+```
 
+直接添加HttpServletRequest为形式参数即可 SpringMVC会自动传递该请求原本的HttpServletRequest对象
+同理 我们也可以添加HttpServletResponse作为形式参数 甚至可以直接将HttpSession也作为参数传递:
 
+```java
+                   @RequestMapping(value = "/index")
+                    public ModelAndView index(HttpSession session) {
+    
+                        System.out.println(session.getAttribute("test"));
+                        session.setAttribute("test", "鸡你太美");
+                        return new ModelAndView("index");
+                        
+                    } 
+```
 
+我们还可以直接将请求参数传递给一个实体类:
 
+```java
+                    @Data
+                    public class User {
+                    
+                        String username;
+                        String password;
+                        
+                    }
+```
 
+注意: 必须携带set方法或是构造方法中包含所有参数 请求参数会自动根据类中的字段名称进行匹配:
 
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(User user) {
+                    
+                        System.out.println("获取到cookie值为: " + user);
+                        return new ModelAndView("index");
+                        
+                    }
+```
 
+@RequestHeader与@RequestPParam用法一致 不过它是用于获取请求头参数的 这里我们不再演示了
 
+### @CookieValue和@SessionAttrbutie
+通过使用@CookieValue注解 我们也可以快速获取请求携带的Cookie信息:
 
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(HttpServletResponse response,
+                                              @CookieValue(value = "test", required = false) String test){
+    
+                        System.out.println("获取到cookie值为: " + test);
+                        response.addCookie(new Cookie("test", "lbwnb"));
+                        return new ModelAndView("index");
+                        
+                    }
+```
 
+同样的 Session能使用注解快速获取:
 
+```java
+                    @RequestMapping(value = "/index")
+                    public ModelAndView index(@SessionAttribute(value = "test", required = false) String test,
+                                              HttpSession session){
+    
+                        session.setAttribute("test", "xxxx");
+                        System.out.println(test);
+                        return new ModelAndView("index");
+                        
+                    }
+```
 
+可以发现 通过使用SpringMVC框架 整个Web应用程序的开发变得非常简单 大部分功能只需要一个注解就可以搞定了 正是得益于Spring框架 SpringMVC才能大显身手
 
+### 重定向和请求转发
+重定向和请求转发也非常简单 我们只需要在视图名称前面加一个前缀即可 比如重定向:
 
+```java
+                    @RequestMapping("/index")
+                    public String index(){
+                        return "redirect:home";
+                    }
+                    
+                    @RequestMapping("/home")
+                    public String home(){
+                        return "home";
+                    }
+```
 
+通过添加redirect:前缀 就可以很方便地实现重定向 那么请求转发呢 其实也是一样的 使用forward:前缀表示转发给其他请求映射:
 
+```java
+                    @RequestMapping("/index")
+                    public String index(){
+                        return "forward:home";
+                    }
+                    
+                    @RequestMapping("/home")
+                    public String home(){
+                        return "home";
+                    }
+```
 
+使用SpringMVC 只需要一个前缀就可以实现重定向和请求转发 非常方便
 
+### Bean的Web作用域
+在学习Spring时我们讲解了Bean的作用域 包括singleton和prototype Bean分别是会以单例和多例模式进行创建 而在SpringMVC中 它的作用域被继续细分:
+- request: 对于每次HTTP请求 使用request作用域定义的Bean都将产生一个新实例 请求结束后Bean也消失
+- session: 对于每一个会话 使用session作用域定义的Bean都是将产生一个新实例 会话过期后Bean也消失
+- global session: 不常用 不做讲解
 
+这里我们创建一个测试类型来试试看:
 
+```java
+                    public class TestBean {
 
+                    }
+```
 
+接着将其注册为Bean 注意: 这里需添加@RequestScope或是@SessionScope表示此Bean的Web作用域:
 
+```java
+                    @Bean
+                    @RequestScope
+                    public TestBean testBean(){
+                        return new TestBean();
+                    }
+```
 
+接着我们将其自动注入到Controller中:
+
+```java
+                    @Controller
+                    public class MainController {
+                    
+                        @Resource
+                        TestBean bean;
+                    
+                        @RequestMapping(value = "/index")
+                        public ModelAndView index(){
+                            
+                            System.out.println(bean);
+                            return new ModelAndView("index");
+                            
+                        }
+                        
+                    }
+```
+
+我们发现 每次发起得到的Bean实例都不同 接着我们将其作用域修改为@SessionScope 这样作用域就上升到Session
+只要清理浏览器的Cookie 那么都会被认为是同一个会话 只要是同一个会话 那么Bean实例始终不变
+
+实际上 它也是通过代理实现的 我们调用Bean中的方法会被转发到真正的Bean对象去执行
