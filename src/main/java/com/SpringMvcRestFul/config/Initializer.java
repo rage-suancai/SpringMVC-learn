@@ -1,4 +1,4 @@
-/**package com.SpringMvcController.config;
+/**package com.SpringMvcRestFul.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

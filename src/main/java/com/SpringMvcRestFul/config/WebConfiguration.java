@@ -1,4 +1,4 @@
-/**package com.SpringMvcController.config;
+/**package com.SpringMvcRestFul.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
-@ComponentScan("com.SpringMvcController.controller")
+@ComponentScan("com.SpringMvcRestFul.controller")
 @EnableWebMvc
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
@@ -48,6 +48,7 @@ public class WebConfiguration implements WebMvcConfigurer {
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/src/main/webapp/static/**").addResourceLocations("/src/main/webapp/static/");

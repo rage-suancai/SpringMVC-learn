@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("yy-ds6")
+@RequestMapping("/yy-ds6")
 public class BeanScopeController6 {
 
     @Autowired

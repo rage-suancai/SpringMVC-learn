@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("yy-ds3")
+@RequestMapping("/yy-ds3")
 public class CookieValueController4 {
 
     @RequestMapping(value = "/index1")

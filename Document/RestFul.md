@@ -23,7 +23,7 @@ RestFul风格的设计允许将参数通过URL拼接传到服务端 目的是让
 
 ```java
                     @RequestMapping("/index/{str}")
-                    public String index(@PathVariable("str") String text){
+                    public String index(@PathVariable("str") String text) {
     
                         System.out.println(text);
                         return "index";
@@ -46,7 +46,7 @@ RestFul风格的设计允许将参数通过URL拼接传到服务端 目的是让
                     public class MainController {
                     
                         @RequestMapping(value = "/index/{id}", method = RequestMethod.GET)
-                        public String get(@PathVariable("id") String text){
+                        public String get(@PathVariable("id") String text) {
                             
                             System.out.println("获取用户: " + text);
                             return "index";
@@ -54,7 +54,7 @@ RestFul风格的设计允许将参数通过URL拼接传到服务端 目的是让
                         }
                     
                         @RequestMapping(value = "/index", method = RequestMethod.POST)
-                        public String post(String username){
+                        public String post(String username) {
                             
                             System.out.println("添加用户: " + username);
                             return "index";
@@ -62,7 +62,7 @@ RestFul风格的设计允许将参数通过URL拼接传到服务端 目的是让
                         }
                     
                         @RequestMapping(value = "/index/{id}", method = RequestMethod.DELETE)
-                        public String delete(@PathVariable("id") String text){
+                        public String delete(@PathVariable("id") String text) {
                             
                             System.out.println("删除用户: " + text);
                             return "index";
@@ -70,7 +70,7 @@ RestFul风格的设计允许将参数通过URL拼接传到服务端 目的是让
                         }
                     
                         @RequestMapping(value = "/index", method = RequestMethod.PUT)
-                        public String put(String username){
+                        public String put(String username) {
                             
                             System.out.println("修改用户: " + username);
                             return "index";

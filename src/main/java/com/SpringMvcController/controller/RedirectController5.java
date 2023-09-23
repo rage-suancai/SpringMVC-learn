@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("yy-ds5")
+@RequestMapping("/yy-ds5")
 public class RedirectController5 {
 
     @RequestMapping("/index1")

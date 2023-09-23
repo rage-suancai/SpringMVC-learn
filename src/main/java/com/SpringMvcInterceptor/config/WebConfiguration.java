@@ -1,18 +1,15 @@
-/**package com.SpringMvcController.config;
+package com.SpringMvcInterceptor.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
-@ComponentScan("com.SpringMvcController.controller")
+@ComponentScan("com.SpringMvcInterceptor.controller")
 @EnableWebMvc
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
@@ -45,6 +42,14 @@ public class WebConfiguration implements WebMvcConfigurer {
     }
 
     @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+
+        registry.addInterceptor(new Interceptor1()).addPathPatterns("/**");
+        registry.addInterceptor(new Interceptor2()).addPathPatterns("/**");
+
+    }
+
+    @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }
@@ -53,4 +58,4 @@ public class WebConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/src/main/webapp/static/**").addResourceLocations("/src/main/webapp/static/");
     }
 
-}**/
+}
