@@ -1,5 +1,7 @@
-/**package com.SpringMvcJsonAndAxios.config;
+package com.SpringMvcUploadAndDownloads.config;
 
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletRegistration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -19,4 +21,9 @@ public class Initializer extends AbstractAnnotationConfigDispatcherServletInitia
         return new String[] {"/"};
     }
 
-}**/
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+        registration.setMultipartConfig(new MultipartConfigElement("D:/Users/Downloads"));
+    }
+
+}

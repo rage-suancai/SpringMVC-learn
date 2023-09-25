@@ -1,4 +1,4 @@
-/**package com.SpringMvcJsonAndAxios.config;
+package com.SpringMvcUploadAndDownloads.config;
 
 import com.alibaba.fastjson2.support.spring6.http.converter.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import java.util.List;
 
-@ComponentScan("com.SpringMvcJsonAndAxios.controller")
+@ComponentScan("com.SpringMvcUploadAndDownloads.controller")
 @EnableWebMvc
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
@@ -60,4 +60,4 @@ public class WebConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/src/main/webapp/static/**").addResourceLocations("/src/main/webapp/static/");
     }
 
-}**/
+}
