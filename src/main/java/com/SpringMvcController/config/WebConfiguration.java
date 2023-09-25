@@ -26,7 +26,6 @@ public class WebConfiguration implements WebMvcConfigurer {
         resolver.setTemplateEngine(springTemplateEngine); return resolver;
 
     }
-
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
 
@@ -35,7 +34,6 @@ public class WebConfiguration implements WebMvcConfigurer {
         resolver.setPrefix("/"); return resolver;
 
     }
-
     @Bean
     public SpringTemplateEngine springTemplateEngine(ITemplateResolver resolver) {
 

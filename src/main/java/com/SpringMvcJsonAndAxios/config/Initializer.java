@@ -1,4 +1,4 @@
-/**package com.SpringMvcInterceptor.config;
+package com.SpringMvcJsonAndAxios.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -19,4 +19,4 @@ public class Initializer extends AbstractAnnotationConfigDispatcherServletInitia
         return new String[] {"/"};
     }
 
-}**/
+}

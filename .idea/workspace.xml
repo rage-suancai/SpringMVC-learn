@@ -9,25 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="SpringMVC的学习与练习(RestFul风格)">
-      <change afterPath="$PROJECT_DIR$/Document/Interceptor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/Interceptor1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/Interceptor2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/controller/InterceptorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcRestFul/config/Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcRestFul/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcRestFul/controller/RestFulController.java" afterDir="false" />
+    <list default="true" id="6f437b25-496c-4782-9012-9bed1b0eaf0e" name="Changes" comment="SpringMVC的学习与练习(Interceptor拦截器)">
+      <change afterPath="$PROJECT_DIR$/Document/ BiographiesAndDownloads.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Document/Exceptions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Document/JsonAndAxios.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcExceptions/config/Initializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcExceptions/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcExceptions/controller/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcExceptions/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/config/Initializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/config/WebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/controller/AxiosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/controller/JsonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcJsonAndAxios/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/axios.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Document/RestFul.md" beforeDir="false" afterPath="$PROJECT_DIR$/Document/RestFul.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Document/Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/Document/Controller.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Document/Interceptor.md" beforeDir="false" afterPath="$PROJECT_DIR$/Document/Interceptor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/config/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/BeanScopeController6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/BeanScopeController6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/CookieValueController4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/CookieValueController4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RedirectController5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RedirectController5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RequestMappingController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RequestMappingController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RequestParamController3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcController/controller/RequestParamController3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcInterceptor/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/SpringMvcRestFul/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/SpringMvcRestFul/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +69,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Document/Controller.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Document/Exceptions.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Document/Interceptor.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Document/JsonAndAxios.md" root0="SKIP_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -104,7 +112,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/back-end learning/java-exercise/JavaEE/javaSSM-yxs/javaSSM-SpringMVC/src/main/java/com/SpringMvcInterceptor",
+    "last_opened_file_path": "D:/back-end learning/CompanyTest/lxqxcx",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +121,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "e3f0dff12277054f6a64aaacad9c5f99",
     "vue.rearranger.settings.migration": "true"
@@ -120,6 +129,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcJsonAndAxios" />
+      <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcAbnormal" />
       <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcInterceptor" />
       <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcRestFul" />
       <recent name="D:\back-end learning\java-exercise\JavaEE\javaSSM-yxs\javaSSM-SpringMVC\src\main\java\com\SpringMvcController" />
@@ -266,7 +277,11 @@
       <workItem from="1695283824616" duration="16010000" />
       <workItem from="1695307537640" duration="1669000" />
       <workItem from="1695309218710" duration="169000" />
-      <workItem from="1695445262844" duration="14211000" />
+      <workItem from="1695445262844" duration="24473000" />
+      <workItem from="1695622674864" duration="19000" />
+      <workItem from="1695623473603" duration="329000" />
+      <workItem from="1695623818741" duration="7853000" />
+      <workItem from="1695631746239" duration="2582000" />
     </task>
     <task id="LOCAL-00001" summary="SpringMVC的学习与练习(@RequestMapping详解)">
       <option name="closed" value="true" />
@@ -300,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695309140454</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SpringMVC的学习与练习(Interceptor拦截器)">
+      <option name="closed" value="true" />
+      <created>1695482786550</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695482786550</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +344,8 @@
     <MESSAGE value="SpringMVC的学习与练习(@RequestMapping详解)" />
     <MESSAGE value="SpringMVC的学习与练习(@RequestParam和@RequestHeader详解)" />
     <MESSAGE value="SpringMVC的学习与练习(RestFul风格)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC的学习与练习(RestFul风格)" />
+    <MESSAGE value="SpringMVC的学习与练习(Interceptor拦截器)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringMVC的学习与练习(Interceptor拦截器)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

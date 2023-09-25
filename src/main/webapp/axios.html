@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Axios测试</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <p>欢迎来到GayHub全球最大同性交友网站</p>
+    <p>用户名: <span id="name"></span></p>
+    <p>年龄: <span id="age"></span></p>
+    <button onclick="getInfo()">获取用户详情信息</button> -->
+
+    <!-- <p>欢迎来到GayHub全球最大同性交友网站</p>
+    <button onclick="login1()">登录</button> -->
+
+    <p>欢迎来到GayHub全球最大同性交友网站</p>
+    <button onclick="login2()">登录</button>
+
+</body>
+
+<script>
+
+    function getInfo() {
+
+        axios.get('/mvc/axios/axios1').then(({data}) => {
+            document.getElementById('name').innerText = data.name
+            document.getElementById("age").innerText = data.age
+        })
+
+    }
+
+    function login1() {
+
+        axios.post('/mvc/axios/login1', {
+            username: 'johnCarmack', password: '12345'
+        }, {
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).then(({data}) => {
+            if (data.success) alert('登录成功')
+            else alert('登录失败')
+        })
+
+    }
+
+    function login2() {
+
+        axios.post("/mvc/axios/login2", {
+            username: 'johnCarmack', password: '123456'
+        }).then(({data}) => {
+            if (data.success) alert('登录成功')
+            else alert('登录失败')
+        })
+
+    }
+
+</script>
+
+</html>

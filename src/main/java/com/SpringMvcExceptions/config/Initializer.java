@@ -1,4 +1,4 @@
-/**package com.SpringMvcInterceptor.config;
+/**package com.SpringMvcExceptions.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

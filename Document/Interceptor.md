@@ -66,7 +66,7 @@
 
 ```java
                     @RequestMapping("/index")
-                    public String index(){
+                    public String index() {
     
                         System.out.println("我是处理");
                         if(true) throw new RuntimeException("");

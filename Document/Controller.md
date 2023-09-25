@@ -96,13 +96,18 @@
 ```html
                     <!DOCTYPE html>
                     <html lang="en">
+
                     <head>
                         <meta charset="UTF-8">
                         <title>测试</title>
                     </head>
+                    
                     <body>
+                    
                         <p>欢迎来到GayHub全球最大同性交友网站</p>
+                    
                     </body>
+
                     </html>
 ```
 
@@ -128,15 +133,20 @@
 ```html
                     <!DOCTYPE html>
                     <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
                     <head>
                         <meta charset="UTF-8">
                         <title>Title</title>
                         <script src="static/test.js"></script>
                     </head>
+                    
                     <body>
+                    
                         HelloWorld！
                         <div th:text="${name}"></div>
+                    
                     </body>
+
                     </html>
 ```
 
@@ -166,15 +176,20 @@
 ```html
                     <!DOCTYPE html>
                     <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
                     <head>
                         <meta charset="UTF-8">
                         <title>Title</title>
                         <script src="static/test.js"></script>
                     </head>
+                    
                     <body>
+                    
                         HelloWorld！
                         <div th:text="${name}"></div>
+                    
                     </body>
+
                     </html>
 ```
 
@@ -212,15 +227,20 @@
 ```html
                     <!DOCTYPE html>
                     <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
                     <head>
                         <meta charset="UTF-8">
                         <title>测试</title>
                         <!-- 引用静态资源 这里使用Thymeleaf的网址链接表达式 Thymeleaf会自动添加web应用程序的名称到链接前面 -->
                         <script th:src="@{/static/test.js}"></script>
                     </head>
+                    
                     <body>
+                    
                         <p>欢迎来到GayHub全球最大同性交友网站</p>
+                    
                     </body>
+
                     </html>
 ```
 
@@ -460,7 +480,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 ```java
                     @RequestMapping(value = "/index")
                     public ModelAndView index(HttpServletResponse response,
-                                              @CookieValue(value = "test", required = false) String test){
+                                              @CookieValue(value = "test", required = false) String test) {
     
                         System.out.println("获取到cookie值为: " + test);
                         response.addCookie(new Cookie("test", "lbwnb"));
@@ -474,7 +494,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 ```java
                     @RequestMapping(value = "/index")
                     public ModelAndView index(@SessionAttribute(value = "test", required = false) String test,
-                                              HttpSession session){
+                                              HttpSession session) {
     
                         session.setAttribute("test", "xxxx");
                         System.out.println(test);
@@ -490,12 +510,12 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 ```java
                     @RequestMapping("/index")
-                    public String index(){
+                    public String index() {
                         return "redirect:home";
                     }
                     
                     @RequestMapping("/home")
-                    public String home(){
+                    public String home() {
                         return "home";
                     }
 ```
@@ -504,12 +524,12 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 
 ```java
                     @RequestMapping("/index")
-                    public String index(){
+                    public String index() {
                         return "forward:home";
                     }
                     
                     @RequestMapping("/home")
-                    public String home(){
+                    public String home() {
                         return "home";
                     }
 ```
@@ -535,7 +555,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
 ```java
                     @Bean
                     @RequestScope
-                    public TestBean testBean(){
+                    public TestBean testBean() {
                         return new TestBean();
                     }
 ```
@@ -550,7 +570,7 @@ header属性使用与params一致 但是它要求的是请求中需要携带什�
                         TestBean bean;
                     
                         @RequestMapping(value = "/index")
-                        public ModelAndView index(){
+                        public ModelAndView index() {
                             
                             System.out.println(bean);
                             return new ModelAndView("index");

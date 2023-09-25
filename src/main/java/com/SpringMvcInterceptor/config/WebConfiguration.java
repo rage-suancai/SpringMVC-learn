@@ -1,4 +1,4 @@
-package com.SpringMvcInterceptor.config;
+/**package com.SpringMvcInterceptor.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,7 +23,6 @@ public class WebConfiguration implements WebMvcConfigurer {
         resolver.setTemplateEngine(springTemplateEngine); return resolver;
 
     }
-
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
 
@@ -32,7 +31,6 @@ public class WebConfiguration implements WebMvcConfigurer {
         resolver.setPrefix("/"); return resolver;
 
     }
-
     @Bean
     public SpringTemplateEngine springTemplateEngine(ITemplateResolver resolver) {
 
@@ -58,4 +56,4 @@ public class WebConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/src/main/webapp/static/**").addResourceLocations("/src/main/webapp/static/");
     }
 
-}
+}**/
